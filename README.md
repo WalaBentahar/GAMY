@@ -22,18 +22,37 @@ Mettre en place une page de connexion pour les utilisateurs contenant :
 
 ## 💻 Travail effectué
 
-✅ Page `login.html` :
+✅ **Page `login.html`** :
+- Structure HTML avec les champs nécessaires (Email, Mot de passe, ID utilisateur)
+- Icônes ajoutées via Font Awesome pour la barre de navigation
+- Formulaire centré au milieu de la page avec des champs **obligatoires** (utilisation de l'attribut `required`)
 
-- Structure HTML avec les champs nécessaires  
-- Icônes ajoutées via Font Awesome  
-- Formulaire centré au milieu de la page  
+✅ **Fichier `style.css`** :
+- Arrière-plan noir clair avec une ligne rouge fine sous la barre de navigation
+- Texte, logo et boutons en rouge, avec des effets au survol pour plus de dynamisme
+- Mise en forme responsive et moderne pour assurer une bonne lisibilité sur toutes les tailles d'écran
+- Ajout d'un lien vers la page d'inscription pour les nouveaux utilisateurs
 
-✅ Fichier `style.css` :
+---
 
-- Arrière-plan noir clair
-- Ligne rouge horizontale sur toute la largeur
-- Texte, logo et boutons en rouge
-- Mise en forme responsive et moderne
+## 💼 Front-office
+
+Le **front-office** de cette application se réfère à la partie visible par l'utilisateur, où il peut interagir avec la page de connexion. La page présente :
+
+- Un formulaire de connexion avec les champs **Email**, **Mot de passe**, et **ID utilisateur**.
+- Un design **Cyberpunk** utilisant une palette de couleurs noire et rouge.
+- Une barre de navigation avec des icônes pour l'**Accueil** et le **Support**.
+- Un formulaire bien centré, offrant une expérience utilisateur claire et fluide.
+
+---
+
+## ⚙️ Back-office
+
+Le **back-office** se réfère à la partie gestion de l'application qui traite les données soumises par l'utilisateur. Bien que pour le moment, cette partie n'inclut que la mise en place du formulaire et du design :
+
+- **Stockage des informations utilisateur** : L'interface de connexion sera bientôt connectée à une base de données pour valider les utilisateurs en fonction de leurs informations.
+- **Gestion des erreurs** : Une gestion des erreurs (comme un mot de passe incorrect ou un email inexistant) sera ajoutée dans les étapes futures avec des messages d'erreur visibles pour l'utilisateur.
+- **Interface d'administration** (à venir) : Une page pour la gestion des utilisateurs, qui permettra de visualiser et gérer les comptes utilisateurs via un panneau d'administration sécurisé.
 
 ---
 
@@ -41,7 +60,7 @@ Mettre en place une page de connexion pour les utilisateurs contenant :
 
 | Fichier       | Description                             |
 |---------------|-----------------------------------------|
-| `login.html`  | La page de connexion utilisateur        |
+| `login.html`  | La page de connexion utilisateur avec le formulaire et la barre de navigation |
 | `style.css`   | Feuille de style commune (design UI)    |
 | `index.html`  | Page d'accueil avec le même design      |
 
@@ -49,9 +68,10 @@ Mettre en place une page de connexion pour les utilisateurs contenant :
 
 ## 🔧 Prochaines étapes
 
-- Ajouter une validation des champs via JavaScript
-- Intégrer la page avec la base de données (si nécessaire)
-- Ajouter des messages d'erreur ou de succès
+- Ajouter une validation des champs via JavaScript pour garantir des entrées correctes.
+- Intégrer la page avec la base de données pour gérer les connexions réelles des utilisateurs (si nécessaire).
+- Ajouter des messages d'erreur ou de succès après la soumission du formulaire pour améliorer l'expérience utilisateur.
+- Implémenter une page de gestion des utilisateurs (Back-office).
 
 ---
 
