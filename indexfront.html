@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMY | Gaming Gear</title>
+    <link rel="stylesheet" href="stylefront.css" />
+    <!-- Font Awesome Icons (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">GAMY</div>
+
+      <!-- Barre de recherche -->
+      <div class="search-bar">
+        <input type="text" placeholder="Rechercher un produit..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="nav-links">
+        <a href="http://localhost/gamy/"><i class="fas fa-home"></i></a>
+        <a href="gear.html" class="active"><i class="fas fa-keyboard"></i></a>
+        <a href="support.html"><i class="fas fa-headset"></i></a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>PREMIUM GAMING GEAR</h1>
+      <p>Upgrade your setup with our high-performance equipment</p>
+    </section>
+
+    <div class="category-filter">
+      <button class="category-btn active">All</button>
+      <button class="category-btn">Keyboards</button>
+      <button class="category-btn">Mice</button>
+      <button class="category-btn">Headsets</button>
+      <button class="category-btn">Chairs</button>
+      <button class="category-btn">Accessories</button>
+    </div>
+
+    <div class="products-container">
+      <!-- Produit 1 -->
+      <div class="product-card">
+        <img
+          src="keyboard.jpg"
+          alt="Mechanical Keyboard"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3 class="product-title">Razer BlackWidow V4 Pro</h3>
+          <p class="product-description">
+            Mechanical gaming keyboard with RGB lighting
+          </p>
+          <div class="product-price">$199.99</div>
+          <div class="quantity-selector">
+            <label for="qty-keyboard">Quantité:</label>
+            <input
+              type="number"
+              id="qty-keyboard"
+              name="qty-keyboard"
+              min="1"
+              max="10"
+              value="0"
+            />
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Produit 2 -->
+      <div class="product-card">
+        <img src="mouse.jpg" alt="Gaming Mouse" class="product-image" />
+        <div class="product-info">
+          <h3 class="product-title">Logitech G Pro X Superlight</h3>
+          <p class="product-description">
+            Ultra-lightweight wireless gaming mouse
+          </p>
+          <div class="product-price">$159.99</div>
+          <div class="quantity-selector">
+            <label for="qty-mouse">Quantité:</label>
+            <input
+              type="number"
+              id="qty-mouse"
+              name="qty-mouse"
+              min="1"
+              max="10"
+              value="0"
+            />
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Produit 3 -->
+      <div class="product-card">
+        <img src="headset.jpg" alt="Gaming Headset" class="product-image" />
+        <div class="product-info">
+          <h3 class="product-title">SteelSeries Arctis Nova Pro</h3>
+          <p class="product-description">
+            Premium wireless gaming headset with ANC
+          </p>
+          <div class="product-price">$349.99</div>
+          <div class="quantity-selector">
+            <label for="qty-headset">Quantité:</label>
+            <input
+              type="number"
+              id="qty-headset"
+              name="qty-headset"
+              min="1"
+              max="10"
+              value="0"
+            />
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Produit 4 -->
+      <div class="product-card">
+        <img src="chair.jpg" alt="Gaming Chair" class="product-image" />
+        <div class="product-info">
+          <h3 class="product-title">Secretlab Titan Evo 2023</h3>
+          <p class="product-description">
+            Ergonomic gaming chair with lumbar support
+          </p>
+          <div class="product-price">$589.00</div>
+          <div class="quantity-selector">
+            <label for="qty-chair">Quantité:</label>
+            <input
+              type="number"
+              id="qty-chair"
+              name="qty-chair"
+              min="1"
+              max="10"
+              value="0"
+            />
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Produit 5 -->
+      <div class="product-card">
+        <img src="monitor.jpg" alt="Gaming Monitor" class="product-image" />
+        <div class="product-info">
+          <h3 class="product-title">ASUS ROG Swift PG32UQX</h3>
+          <p class="product-description">
+            32" 4K 144Hz Mini-LED gaming monitor
+          </p>
+          <div class="product-price">$2999.99</div>
+          <div class="quantity-selector">
+            <label for="qty-monitor">Quantité:</label>
+            <input
+              type="number"
+              id="qty-monitor"
+              name="qty-monitor"
+              min="1"
+              max="10"
+              value="0"
+            />
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Produit 6 -->
+      <div class="product-card">
+        <img src="controller.jpg" alt="Game Controller" class="product-image" />
+        <div class="product-info">
+          <h3 class="product-title">Xbox Elite Series 2</h3>
+          <p class="product-description">
+            Customizable pro controller with adjustable tension
+          </p>
+          <div class="product-price">$179.99</div>
+          <div class="quantity-selector">
+            <label for="qty-controller">Quantité:</label>
+            <input
+              type="number"
+              id="qty-controller"
+              name="qty-controller"
+              min="1"
+              max="10"
+              value="0"
+            />
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="logui">
+      <img src="logo.png" alt="gamy" />
+    </nav>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Effet de glow de la souris
+        const glow = document.createElement("div");
+        glow.className = "cursor-glow";
+        document.body.appendChild(glow);
+
+        document.addEventListener("mousemove", (e) => {
+          glow.style.left = `${e.clientX}px`;
+          glow.style.top = `${e.clientY}px`;
+        });
+
+        // Filtrage des catégories
+        const categoryBtns = document.querySelectorAll(".category-btn");
+        categoryBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            categoryBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            // Ici vous ajouteriez le code pour filtrer les produits
+            // par catégorie (nécessite JavaScript supplémentaire ou backend)
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
