@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /gamyy/public/
+
+# Admin routes
+RewriteRule ^admin/(.*)$ admin.php?path=$1 [L,QSA]
+
+# Frontend routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
