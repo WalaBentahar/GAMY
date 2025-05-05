@@ -1,10 +1,13 @@
 RewriteEngine On
 RewriteBase /gamyy/public/
 
-# Admin routes
+# Handle search route FIRST
+RewriteRule ^streams$ index.php?url=streams [L,QSA]
+
+# Then handle admin routes
 RewriteRule ^admin/(.*)$ admin.php?path=$1 [L,QSA]
 
-# Frontend routes
+# Then other frontend routes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

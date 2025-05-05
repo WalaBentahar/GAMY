@@ -38,6 +38,14 @@
                 <li><a href="<?= ADMIN_URL ?>/dashboard" class="admin-btn"><i class="fas fa-lock"></i> Admin</a></li>
             <?php endif; ?>
         </ul>
+        <?php if(strpos($_SERVER['REQUEST_URI'], '/admin/') === false): ?>
+<div class="search-container">
+    <form action="<?= BASE_URL ?>streams" method="get" class="search-form">
+        <input type="search" name="search_query" placeholder="Search videos and streams..." value="<?= htmlspecialchars($_GET['search_query'] ?? '') ?>">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+<?php endif; ?>
     </nav>
 
     <main class="container">

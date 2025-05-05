@@ -10,7 +10,7 @@ $action = $segments[0] ?? 'dashboard';
 $subaction = $segments[1] ?? null;
 $id = $segments[2] ?? null;
 
-// Load StreamController for stream routes
+// StreamController routes
 if ($action === 'streams') {
     require APP_PATH . 'controllers/StreamController.php';
     $controller = new StreamController();
@@ -24,6 +24,9 @@ if ($action === 'streams') {
             break;
         case ($subaction === 'delete' && isset($id)):
             $controller->delete($id);
+            break;
+        case ($subaction === 'live'): // NOUVELLE ROUTE LIVE
+            $controller->showLive();
             break;
         default:
             $controller->index();

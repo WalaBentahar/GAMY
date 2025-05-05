@@ -22,5 +22,6 @@ class VideoController {
             die("Database Error: " . $e->getMessage());
         }
     }
+    
 }
 ?>

@@ -13,7 +13,7 @@
 
 <!-- Floating Admin Button -->
 <div class="admin-floating">
-    <a href="<?= ADMIN_URL ?>">
+    <a href="<?= ADMIN_URL ?>/dashboard">
         <i class="fas fa-lock"></i>
         <span>Admin</span>
     </a>

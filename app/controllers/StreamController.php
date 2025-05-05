@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../models/Stream.php';
 require_once __DIR__ . '/../models/Category.php';
-
+require_once __DIR__ . '/../models/Video.php';
 class StreamController {
     private $streamModel;
     private $categoryModel;
@@ -12,9 +12,41 @@ class StreamController {
     }
 
     public function index() {
-        $streams = $this->streamModel->getAll();
-        $categories = $this->categoryModel->getAllCategories();
-        include VIEWS_PATH . 'admin/streams/index.php';
+        // Handle sorting
+        $sort = $_GET['sort'] ?? 'title_asc';
+        $validSorts = [
+            'title_asc' => 'title ASC',
+            'title_desc' => 'title DESC',
+            'newest' => 'id DESC',
+            'oldest' => 'id ASC'
+        ];
+        $orderBy = $validSorts[$sort] ?? 'title ASC';
+    
+        // Handle ADMIN section FIRST
+        if (strpos($_SERVER['REQUEST_URI'], '/admin/') !== false) {
+            // Admin streams CRUD (no search/sorting)
+            $streams = $this->streamModel->getAll('title ASC'); // Default admin sorting
+            $categories = $this->categoryModel->getAllCategories();
+            include VIEWS_PATH . 'admin/streams/index.php';
+            return;
+        }
+    
+        // Handle FRONTEND (search/sorting)
+        if (isset($_GET['search_query'])) {
+            $searchQuery = trim($_GET['search_query']);
+            $streamModel = new Stream();
+            $videoModel = new Video();
+            $streams = $streamModel->searchStreams($searchQuery, $orderBy);
+            $videos = $videoModel->searchVideos($searchQuery, $orderBy);
+        } else {
+            // Regular frontend listing
+            $streamModel = new Stream();
+            $videoModel = new Video();
+            $streams = $streamModel->getAll($orderBy);
+            $videos = $videoModel->getAllVideos($orderBy);
+        }
+    
+        include VIEWS_PATH . 'streams/index.php';
     }
 
     public function create() {
@@ -27,9 +59,15 @@ class StreamController {
             $title = trim($_POST['title']);
             $stream_input = trim($_POST['stream_input']);
             $category_id = (int)$_POST['category_id'];
-    
-            // Extract YouTube ID from URL
             $stream_id = $this->parseYoutubeId($stream_input);
+    
+            // Check if stream_id already exists
+            $existing = $this->streamModel->getStreamByYoutubeId($stream_id);
+            if ($existing) {
+                $_SESSION['error'] = "This stream already exists in the database";
+                header('Location: ' . ADMIN_URL . '/streams/add');
+                exit;
+            }
             
             if (!$stream_id) {
                 $_SESSION['error'] = "Invalid YouTube URL or ID format";
@@ -83,5 +121,17 @@ class StreamController {
         
         return $matches[1];
     }
+    public function live() {  // Renommez showLive() en live()
+        $stream_id = $_GET['id'] ?? null;
+        $stream = $this->streamModel->getStreamById($stream_id);
+        
+        if (!$stream) {
+            header('Location: ' . BASE_URL . 'streams');
+            exit;
+        }
+        
+        include VIEWS_PATH . 'streams/live.php';
+    }
+    
 }
 ?>

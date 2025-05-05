@@ -8,10 +8,12 @@ class Video {
     }
 
     // Get all videos with category names
-    public function getAllVideos() {
+    public function getAllVideos($orderBy = 'title ASC') {
         $query = "SELECT videos.*, categories.name AS category_name 
                   FROM videos 
-                  JOIN categories ON videos.category_id = categories.id";
+                  JOIN categories ON videos.category_id = categories.id
+                  ORDER BY $orderBy";
+                  
         $stmt = $this->db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -30,5 +32,18 @@ class Video {
         $stmt = $this->db->prepare($query);
         return $stmt->execute([$id]);
     }
+    public function searchVideos($query, $orderBy = 'title ASC') {
+        $searchTerm = "%$query%";
+        $sql = "SELECT videos.*, categories.name AS category_name 
+                FROM videos 
+                JOIN categories ON videos.category_id = categories.id
+                WHERE videos.title LIKE ?
+                ORDER BY $orderBy"; // Added sorting
+        
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute([$searchTerm]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
+
 ?>

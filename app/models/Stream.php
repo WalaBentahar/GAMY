@@ -8,10 +8,16 @@ class Stream {
         $this->db = (new Database())->connect();
     }
 
-    public function getAll() {
+    public function getAll($orderBy = 'title ASC') {
+        // Add validation for admin safety
+        $allowedOrders = ['title ASC', 'title DESC', 'id ASC', 'id DESC'];
+        $cleanOrder = in_array($orderBy, $allowedOrders) ? $orderBy : 'title ASC';
+        
         $query = "SELECT streams.*, categories.name AS category_name 
                   FROM streams 
-                  JOIN categories ON streams.category_id = categories.id";
+                  JOIN categories ON streams.category_id = categories.id
+                  ORDER BY $cleanOrder";
+        
         $stmt = $this->db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -49,6 +55,30 @@ class Stream {
     }
     public function getEmbedUrl() {
         return "https://www.youtube.com/embed/" . $this->stream_id;
+    }
+    public function getStreamById($id) {
+        $query = "SELECT * FROM streams WHERE id = ?";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+    public function searchStreams($query, $orderBy = 'title ASC') {
+        $searchTerm = "%$query%";
+        $sql = "SELECT streams.*, categories.name AS category_name 
+                FROM streams 
+                JOIN categories ON streams.category_id = categories.id
+                WHERE streams.title LIKE ?
+                ORDER BY $orderBy"; // Added sorting
+        
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute([$searchTerm]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function getStreamByYoutubeId($youtube_id) {
+        $query = "SELECT * FROM streams WHERE stream_id = ?";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute([$youtube_id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 }
 ?>

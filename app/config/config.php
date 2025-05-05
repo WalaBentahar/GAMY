@@ -15,6 +15,8 @@ define('VIEWS_PATH', APP_PATH . 'views/'); // Now points to app/views/
 define('PARTIALS_PATH', VIEWS_PATH . 'partials/'); // Now points to app/views/partials/
 // Add admin URL
 define('ADMIN_URL', BASE_URL . 'admin');
+// Add this route constant
+define('STREAMS_URL', BASE_URL . 'streams');
 // Start session
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
