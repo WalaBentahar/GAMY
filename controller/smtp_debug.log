@@ -1,0 +1,1371 @@
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-3a09a002899sm5097733f8f.0 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-3a09a002899sm5097733f8f.0 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<frrefied@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-3a09a002899sm5097733f8f.0 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-3a09a002899sm5097733f8f.0 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sat, 3 May 2025 21:02:26 +0200
+
+[1] CLIENT -> SERVER: To: aziz <frrefied@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #14
+
+[1] CLIENT -> SERVER: Message-ID: <0CwndCHx9YfZyVEH0u2HZZsYxeVoOFCHeEWUAx0LCQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_0CwndCHx9YfZyVEH0u2HZZsYxeVoOFCHeEWUAx0LCQ"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_0CwndCHx9YfZyVEH0u2HZZsYxeVoOFCHeEWUAx0LCQ
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #14:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: yo
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_0CwndCHx9YfZyVEH0u2HZZsYxeVoOFCHeEWUAx0LCQ
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #14</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         salut</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         yo</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_0CwndCHx9YfZyVEH0u2HZZsYxeVoOFCHeEWUAx0LCQ--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746298948 ffacd0b85a97d-3a09a002899sm5097733f8f.0 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-3a09a002899sm5097733f8f.0 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-441b89d1548sm81686445e9.11 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-441b89d1548sm81686445e9.11 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<zarrouk.aziz@esprit.tn>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-441b89d1548sm81686445e9.11 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-441b89d1548sm81686445e9.11 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sat, 3 May 2025 21:03:28 +0200
+
+[1] CLIENT -> SERVER: To: aziz <zarrouk.aziz@esprit.tn>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #15
+
+[1] CLIENT -> SERVER: Message-ID: <h9h5jaLiaA2AZDR1swrLzqREgAgE8D2eMkvtVqAIgw@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_h9h5jaLiaA2AZDR1swrLzqREgAgE8D2eMkvtVqAIgw"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_h9h5jaLiaA2AZDR1swrLzqREgAgE8D2eMkvtVqAIgw
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #15:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: saluttt
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_h9h5jaLiaA2AZDR1swrLzqREgAgE8D2eMkvtVqAIgw
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #15</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         salut</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         saluttt</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_h9h5jaLiaA2AZDR1swrLzqREgAgE8D2eMkvtVqAIgw--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746299011 5b1f17b1804b1-441b89d1548sm81686445e9.11 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-441b89d1548sm81686445e9.11 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-3a099ae3c49sm5612229f8f.39 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-3a099ae3c49sm5612229f8f.39 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<rayencheese@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-3a099ae3c49sm5612229f8f.39 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-3a099ae3c49sm5612229f8f.39 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sat, 3 May 2025 21:06:20 +0200
+
+[1] CLIENT -> SERVER: To: aziz <rayencheese@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #16
+
+[1] CLIENT -> SERVER: Message-ID: <qUE554NSlImeItdwHW6TZbwcGU3f8RTsQGJtJjhE@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_qUE554NSlImeItdwHW6TZbwcGU3f8RTsQGJtJjhE"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_qUE554NSlImeItdwHW6TZbwcGU3f8RTsQGJtJjhE
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #16:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: falfoulioto
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_qUE554NSlImeItdwHW6TZbwcGU3f8RTsQGJtJjhE
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #16</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         waaa la7a</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         falfoulioto</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_qUE554NSlImeItdwHW6TZbwcGU3f8RTsQGJtJjhE--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746299182 ffacd0b85a97d-3a099ae3c49sm5612229f8f.39 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-3a099ae3c49sm5612229f8f.39 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-441b89d1636sm81490545e9.13 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.176.174.110]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-441b89d1636sm81490545e9.13 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<rayencheese@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-441b89d1636sm81490545e9.13 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-441b89d1636sm81490545e9.13 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Sat, 3 May 2025 21:08:35 +0200
+
+[1] CLIENT -> SERVER: To: rayen <rayencheese@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #17
+
+[1] CLIENT -> SERVER: Message-ID: <lwjXg3zPWE1seHrodg2aCRRbxQYhWCXfd9CwAAZMLs@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_lwjXg3zPWE1seHrodg2aCRRbxQYhWCXfd9CwAAZMLs"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_lwjXg3zPWE1seHrodg2aCRRbxQYhWCXfd9CwAAZMLs
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #17:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: ggg
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_lwjXg3zPWE1seHrodg2aCRRbxQYhWCXfd9CwAAZMLs
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #17</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         aa</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         ggg</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_lwjXg3zPWE1seHrodg2aCRRbxQYhWCXfd9CwAAZMLs--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746299318 5b1f17b1804b1-441b89d1636sm81490545e9.13 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-441b89d1636sm81490545e9.13 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-441b2aecc89sm177721875e9.9 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-441b2aecc89sm177721875e9.9 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<frrefied@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-441b2aecc89sm177721875e9.9 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-441b2aecc89sm177721875e9.9 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Mon, 5 May 2025 14:48:57 +0200
+
+[1] CLIENT -> SERVER: To: aziz <frrefied@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #18
+
+[1] CLIENT -> SERVER: Message-ID: <AZ18pYxmEAYFc4dNya12GEyk4OzWlhdDvbPyopfQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_AZ18pYxmEAYFc4dNya12GEyk4OzWlhdDvbPyopfQ"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_AZ18pYxmEAYFc4dNya12GEyk4OzWlhdDvbPyopfQ
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #18:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: hhhhhh
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_AZ18pYxmEAYFc4dNya12GEyk4OzWlhdDvbPyopfQ
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #18</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         wwaasdzdezf</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         hhhhhh</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_AZ18pYxmEAYFc4dNya12GEyk4OzWlhdDvbPyopfQ--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746449336 5b1f17b1804b1-441b2aecc89sm177721875e9.9 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-441b2aecc89sm177721875e9.9 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-441b2b28732sm177580575e9.37 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-441b2b28732sm177580575e9.37 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<walabentahar0@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-441b2b28732sm177580575e9.37 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-441b2b28732sm177580575e9.37 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Mon, 5 May 2025 14:50:19 +0200
+
+[1] CLIENT -> SERVER: To: aziz <walabentahar0@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #19
+
+[1] CLIENT -> SERVER: Message-ID: <YpVIKab9YnudacMHNrEWMDmy1B9Uuyai1exsVftsE@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_YpVIKab9YnudacMHNrEWMDmy1B9Uuyai1exsVftsE"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_YpVIKab9YnudacMHNrEWMDmy1B9Uuyai1exsVftsE
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #19:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: walalaaaa
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_YpVIKab9YnudacMHNrEWMDmy1B9Uuyai1exsVftsE
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #19</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         wwaasdzdezf</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         walalaaaa</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_YpVIKab9YnudacMHNrEWMDmy1B9Uuyai1exsVftsE--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746449418 5b1f17b1804b1-441b2b28732sm177580575e9.37 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-441b2b28732sm177580575e9.37 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-3a099b170d0sm10566248f8f.99 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-3a099b170d0sm10566248f8f.99 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<walabentaher0@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-3a099b170d0sm10566248f8f.99 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-3a099b170d0sm10566248f8f.99 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Mon, 5 May 2025 15:39:21 +0200
+
+[1] CLIENT -> SERVER: To: aziz <walabentaher0@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #20
+
+[1] CLIENT -> SERVER: Message-ID: <KH72H1gsIxOeyQ19gBegPE1fxjSJ4p4mqAiK7PhU8@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_KH72H1gsIxOeyQ19gBegPE1fxjSJ4p4mqAiK7PhU8"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_KH72H1gsIxOeyQ19gBegPE1fxjSJ4p4mqAiK7PhU8
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #20:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: aaaaa
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_KH72H1gsIxOeyQ19gBegPE1fxjSJ4p4mqAiK7PhU8
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #20</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         aaaa</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         aaaaa</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_KH72H1gsIxOeyQ19gBegPE1fxjSJ4p4mqAiK7PhU8--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746452360 ffacd0b85a97d-3a099b170d0sm10566248f8f.99 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-3a099b170d0sm10566248f8f.99 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP ffacd0b85a97d-3a099b0fe92sm10609999f8f.68 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [196.203.207.178]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK ffacd0b85a97d-3a099b0fe92sm10609999f8f.68 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<walabentahar0@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK ffacd0b85a97d-3a099b0fe92sm10609999f8f.68 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead ffacd0b85a97d-3a099b0fe92sm10609999f8f.68 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Mon, 5 May 2025 15:40:06 +0200
+
+[1] CLIENT -> SERVER: To: aziz <walabentahar0@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #21
+
+[1] CLIENT -> SERVER: Message-ID: <LPDm0Zot6UCt9zM0oWAPCA5JkJ2ZS41lkENL1IHeQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_LPDm0Zot6UCt9zM0oWAPCA5JkJ2ZS41lkENL1IHeQ"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_LPDm0Zot6UCt9zM0oWAPCA5JkJ2ZS41lkENL1IHeQ
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #21:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: testt
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_LPDm0Zot6UCt9zM0oWAPCA5JkJ2ZS41lkENL1IHeQ
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #21</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         aaaa</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         testt</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_LPDm0Zot6UCt9zM0oWAPCA5JkJ2ZS41lkENL1IHeQ--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746452405 ffacd0b85a97d-3a099b0fe92sm10609999f8f.68 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection ffacd0b85a97d-3a099b0fe92sm10609999f8f.68 - gsmtp
+
+[3] Connection: closed
+[3] Invalid address:  (to): aaaaaa
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP a640c23a62f3a-ad219746725sm210546066b.111 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [41.62.97.15]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [41.62.97.15]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK a640c23a62f3a-ad219746725sm210546066b.111 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<walabentahar0@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK a640c23a62f3a-ad219746725sm210546066b.111 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead a640c23a62f3a-ad219746725sm210546066b.111 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Fri, 9 May 2025 22:21:49 +0000
+
+[1] CLIENT -> SERVER: To: aziz <walabentahar0@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #22
+
+[1] CLIENT -> SERVER: Message-ID: <I6aJYrLUUHrqGNqyLTu8GprfYIi2HmkiC53hOFczQ@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_I6aJYrLUUHrqGNqyLTu8GprfYIi2HmkiC53hOFczQ"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_I6aJYrLUUHrqGNqyLTu8GprfYIi2HmkiC53hOFczQ
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #22:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: qqdsf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_I6aJYrLUUHrqGNqyLTu8GprfYIi2HmkiC53hOFczQ
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #22</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         aaaahh</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         qqdsf</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_I6aJYrLUUHrqGNqyLTu8GprfYIi2HmkiC53hOFczQ--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746829312 a640c23a62f3a-ad219746725sm210546066b.111 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[3] Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection a640c23a62f3a-ad219746725sm210546066b.111 - gsmtp
+
+[3] Connection: closed
+[3] Connection: opened
+[2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP a640c23a62f3a-ad2193506b0sm216072966b.68 - gsmtp
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [41.62.97.15]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: STARTTLS
+
+[2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[1] CLIENT -> SERVER: EHLO localhost
+
+[2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [41.62.97.15]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[1] CLIENT -> SERVER: AUTH LOGIN
+
+[2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[1] CLIENT -> SERVER: [credentials hidden]
+[2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[1] CLIENT -> SERVER: MAIL FROM:<your.email@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.0 OK a640c23a62f3a-ad2193506b0sm216072966b.68 - gsmtp
+
+[1] CLIENT -> SERVER: RCPT TO:<walabentahar0@gmail.com>
+
+[2] SERVER -> CLIENT: 250 2.1.5 OK a640c23a62f3a-ad2193506b0sm216072966b.68 - gsmtp
+
+[1] CLIENT -> SERVER: DATA
+
+[2] SERVER -> CLIENT: 354 Go ahead a640c23a62f3a-ad2193506b0sm216072966b.68 - gsmtp
+
+[1] CLIENT -> SERVER: Date: Fri, 9 May 2025 22:21:51 +0000
+
+[1] CLIENT -> SERVER: To: aziz <walabentahar0@gmail.com>
+
+[1] CLIENT -> SERVER: From: Gamix Support <your.email@gmail.com>
+
+[1] CLIENT -> SERVER: Reply-To: Gamix Support <support@gamix.com>
+
+[1] CLIENT -> SERVER: Subject: Re: Your Support Ticket #22
+
+[1] CLIENT -> SERVER: Message-ID: <L9cSR3imy9zBpIMhhtjNNHyzd8nVhkfXeCJqkoAQDc@localhost>
+
+[1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[1] CLIENT -> SERVER:  boundary="b1=_L9cSR3imy9zBpIMhhtjNNHyzd8nVhkfXeCJqkoAQDc"
+
+[1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_L9cSR3imy9zBpIMhhtjNNHyzd8nVhkfXeCJqkoAQDc
+
+[1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: Response to your ticket #22:
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: qqdsf
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_L9cSR3imy9zBpIMhhtjNNHyzd8nVhkfXeCJqkoAQDc
+
+[1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER:                     <h2 style='color:#ff0000'>Gamix Support Response</h2>
+
+[1] CLIENT -> SERVER:                     <p><strong>Ticket #22</strong></p>
+
+[1] CLIENT -> SERVER:                     <div style='background:#f5f5f5;padding:15px;border-left:3px solid #ff0000;margin:10px 0'>
+
+[1] CLIENT -> SERVER:                         <p><strong>Your message:</strong><br>
+
+[1] CLIENT -> SERVER:                         aaaahh</p>
+
+[1] CLIENT -> SERVER:                         <hr>
+
+[1] CLIENT -> SERVER:                         <p><strong>Our response:</strong><br>
+
+[1] CLIENT -> SERVER:                         qqdsf</p>
+
+[1] CLIENT -> SERVER:                     </div>
+
+[1] CLIENT -> SERVER:                     <p>Thank you for contacting Gamix Support!</p>
+
+[1] CLIENT -> SERVER:                 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: --b1=_L9cSR3imy9zBpIMhhtjNNHyzd8nVhkfXeCJqkoAQDc--
+
+[1] CLIENT -> SERVER: 
+
+[1] CLIENT -> SERVER: .
+
+[2] SERVER -> CLIENT: 250 2.0.0 OK  1746829314 a640c23a62f3a-ad2193506b0sm216072966b.68 - gsmtp
+
+[1] CLIENT -> SERVER: QUIT
+
+[2] SERVER -> CLIENT: 221 2.0.0 closing connection a640c23a62f3a-ad2193506b0sm216072966b.68 - gsmtp
+
+[3] Connection: closed
